@@ -15,7 +15,6 @@ git clone https://github.com/jackteruya/Django-cadastro.git
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python contrib/env_gen.py
 python manage.py migrate
 python manage.py runserver
 ```
