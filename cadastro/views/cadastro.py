@@ -41,3 +41,8 @@ def simple_upload(request):
                 )
 
     return render(request, 'import.html')
+
+
+def home(request):
+    if request.method == 'GET':
+        return render(request, 'index.html')

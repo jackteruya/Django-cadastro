@@ -1,7 +1,7 @@
 from django.urls import path
 
 from cadastro.api_views import ListarMulheresDeMereenAPIView, ListarCadastrAPIView
-from cadastro.views import simple_upload
+from cadastro.views import simple_upload, home
 
 
 urlpatterns = [
@@ -11,4 +11,5 @@ urlpatterns = [
 
     # url para fazer upload do arquivo xlsx
     path('dados-upload/', simple_upload),
+    path('', home),
 ]
