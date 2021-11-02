@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "09ebfc1a-1ddb-4ca7-9c74-84f1c885c518",
+		"name": "endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar as mulheres de meeren",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/listar-mulheres-meeren/",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"listar-mulheres-meeren",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pessoas por sexo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/cadastro/{{sexo}}/",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"cadastro",
+						"{{sexo}}",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8000"
+		}
+	]
+}
