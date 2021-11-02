@@ -1,0 +1,13 @@
+{% extends "cadastro/base.html" %}
+
+{% block content %}
+    <h2>Realizar carga de dados.</h2>
+    <div>
+        <form enctype="multipart/form-data" id="import_data_form" method="post"> {% csrf_token %}
+            <label>Carregar Dados: <input type="file" name="arquivo"></label>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+{% endblock %}
